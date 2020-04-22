@@ -17,6 +17,8 @@ public class ProviderApplication extends SpringBootServletInitializer {
     /*
     * 继承SpringBootServletInitializer重写configure方法
     * 去除默认Tomcat
+    *
+    * 测试：hello world
     * */
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder){
         return builder.sources(this.getClass());
