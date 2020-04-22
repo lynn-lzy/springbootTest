@@ -12,11 +12,18 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="springbootApi" target="1.5" />
-      <module name="springbootCommon" target="1.5" />
+      <module name="springbootApi" target="1.8" />
+      <module name="springbootCommon" target="1.8" />
       <module name="springbootConsumer" target="1.5" />
-      <module name="springbootProvider" target="1.5" />
-      <module name="springbootTest" target="1.5" />
+      <module name="springbootProvider" target="1.8" />
+      <module name="springbootTest" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springbootApi" options="-parameters" />
+      <module name="springbootCommon" options="-parameters" />
+      <module name="springbootProvider" options="-parameters" />
+    </option>
   </component>
 </project>
