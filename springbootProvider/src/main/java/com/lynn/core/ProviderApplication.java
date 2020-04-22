@@ -9,10 +9,15 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication
 @EnableDubboConfiguration
 public class ProviderApplication extends SpringBootServletInitializer {
+
     public static void main(String[] args) {
         SpringApplication.run(ProviderApplication.class,args);
     }
 
+    /*
+    * 继承SpringBootServletInitializer重写configure方法
+    * 去除默认Tomcat
+    * */
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder){
         return builder.sources(this.getClass());
     }
