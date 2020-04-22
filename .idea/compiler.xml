@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springbootApi" />
+        <module name="springbootCommon" />
+        <module name="springbootProvider" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springbootApi" target="1.5" />
+      <module name="springbootCommon" target="1.5" />
+      <module name="springbootConsumer" target="1.5" />
+      <module name="springbootProvider" target="1.5" />
+      <module name="springbootTest" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
